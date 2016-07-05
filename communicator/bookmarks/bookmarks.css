@@ -1,0 +1,93 @@
+/* -*- Mode: C; c-basic-offset: 2 -*- */
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/**
+ * Style rules for generic bookmarks items.
+ */
+
+treechildren::-moz-tree-image(Name),
+treechildren::-moz-tree-image(title) {
+  -moz-margin-end: 2px;
+  width: 16px;
+  height: 16px;
+}
+
+.bookmark-item,
+treechildren::-moz-tree-image(Name),
+treechildren::-moz-tree-image(title) {
+  list-style-image: url("chrome://communicator/skin/bookmarks/bookmark-item.gif");
+}
+
+.bookmark-item[container="true"],
+treechildren::-moz-tree-image(Name, container),
+treechildren::-moz-tree-image(title, container) {
+  list-style-image: url("chrome://communicator/skin/bookmarks/bookmark-folder-closed.gif");
+}
+
+.bookmark-item[open="true"],
+treechildren::-moz-tree-image(Name, open),
+treechildren::-moz-tree-image(title, open) {
+  list-style-image: url("chrome://communicator/skin/bookmarks/bookmark-folder-open.gif");
+}
+
+.bookmark-item[container="true"][open="true"][loading="true"] {
+  list-style-image: url("chrome://communicator/skin/icons/loading.gif") !important;
+}
+
+.bookmark-item > .toolbarbutton-box > .toolbarbutton-icon {
+  list-style-image: inherit;
+  width: 16px;
+  height: 16px;
+}
+
+.bookmark-item[container][livemark],
+treechildren::-moz-tree-image(title, container, livemark) {
+  list-style-image: url("chrome://communicator/skin/bookmarks/bookmark-folder-livemark.gif");
+  -moz-image-region: auto;
+}
+
+.bookmark-item[container][livemark] .bookmark-item,
+treechildren::-moz-tree-image(title, livemarkItem) {
+  list-style-image: url("chrome://communicator/skin/bookmarks/bookmark-item-updated.gif");
+}
+
+.bookmark-item[container][livemark] .bookmark-item[visited],
+treechildren::-moz-tree-image(title, livemarkItem, visited) {
+  list-style-image: url("chrome://communicator/skin/bookmarks/bookmark-item.gif");
+}
+
+/* query-nodes should be styled even if they're not expandable */
+.bookmark-item[container][query],
+treechildren::-moz-tree-image(title, query) {
+  list-style-image: url("chrome://communicator/skin/bookmarks/bookmark-folder-query.gif");
+  -moz-image-region: auto;
+}
+
+treechildren::-moz-tree-image(Name, separator),
+treechildren::-moz-tree-image(title, separator) {
+  list-style-image: none;
+  width: 0px;
+  height: 0px;
+}
+
+treechildren::-moz-tree-cell-text(Name, separator),
+treechildren::-moz-tree-cell-text(title, separator) {
+  color: ThreeDShadow;
+  margin: 0px 5px;
+}
+
+treechildren::-moz-tree-cell-text(Name, separator, selected, focus),
+treechildren::-moz-tree-cell-text(title, separator, selected, focus) {
+  color: HighlightText;
+}
+
+/* Sidebar panel tree */
+.sidebar-placesTree {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+}

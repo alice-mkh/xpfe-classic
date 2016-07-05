@@ -1,0 +1,73 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ==== tasksOverlay.css ================================================
+   == Styles used by the the overlay which contains tasks related
+   == content, such as the taskbar and product launcher icons.
+   ====================================================================== */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: communicator product icons ::::: */
+
+#mini-nav {
+  list-style-image: url("chrome://communicator/skin/taskbar/navigator.gif");
+}
+
+#mini-nav:hover {
+  list-style-image: url("chrome://communicator/skin/taskbar/navigator-hov.gif");
+}
+
+.icon-navigator16 {
+  list-style-image: url("chrome://communicator/skin/taskbar/navigator-16.gif");
+}
+  
+#mini-mail {
+  list-style-image: url("chrome://communicator/skin/taskbar/mail.gif");
+}
+
+#mini-mail:hover {
+  list-style-image: url("chrome://communicator/skin/taskbar/mail-hov.gif");
+}
+
+#mini-mail[BiffState="NewMail"] {
+  list-style-image: url("chrome://communicator/skin/taskbar/mailnew.gif");
+}
+
+#mini-mail[BiffState="NewMail"]:hover {
+  list-style-image: url("chrome://communicator/skin/taskbar/mailnew-hov.gif");
+}
+
+.icon-mail16 {
+  list-style-image: url("chrome://communicator/skin/taskbar/mail-16.gif");
+}
+
+#mini-addr {
+  list-style-image: url("chrome://communicator/skin/taskbar/addressbook.gif");
+}
+
+#mini-addr:hover {
+  list-style-image: url("chrome://communicator/skin/taskbar/addressbook-hov.gif");
+}
+
+.icon-addressbook16 {
+  list-style-image: url("chrome://communicator/skin/taskbar/addressbook-16.gif");
+}
+
+#mini-comp {
+  list-style-image: url("chrome://communicator/skin/taskbar/composer.gif");
+}
+
+#mini-comp:hover {
+  list-style-image: url("chrome://communicator/skin/taskbar/composer-hov.gif");
+}
+.icon-composer16 {
+  list-style-image: url("chrome://communicator/skin/taskbar/composer-16.gif");
+}
+
+/* ::::: component bar ::::: */
+
+#component-bar {
+  -moz-box-align: stretch;
+}

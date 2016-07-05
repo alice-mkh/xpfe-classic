@@ -1,0 +1,251 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== messengercompose.css ===========================================
+  == Styles for the main Messenger Compose window.
+  ======================================================================= */
+
+@import url("chrome://messenger/skin/");
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: primary toolbar buttons ::::: */
+ 
+.toolbarbutton-1 {
+  list-style-image: url("chrome://messenger/skin/icons/btn1.gif");
+}
+
+#button-send {
+  -moz-image-region: rect(294px 23px 315px 0px);
+}
+
+#button-send:hover {
+  -moz-image-region: rect(294px 46px 315px 23px);
+} 
+
+#button-send:hover:active {
+  -moz-image-region: rect(294px 69px 315px 46px);
+} 
+
+#button-send[disabled="true"] {
+  -moz-image-region: rect(294px 92px 315px 69px) !important;
+} 
+
+#button-address {
+  -moz-image-region: rect(231px 23px 252px 0px);
+}
+
+#button-address:hover {
+  -moz-image-region: rect(231px 46px 252px 23px);
+} 
+
+#button-address:hover:active {
+  -moz-image-region: rect(231px 69px 252px 46px);
+} 
+
+#button-address[disabled="true"] {
+  -moz-image-region: rect(231px 92px 252px 69px) !important;
+} 
+
+#button-attach {
+  -moz-image-region: rect(252px 23px 273px 0px);
+}
+
+#button-attach:hover {
+  -moz-image-region: rect(252px 46px 273px 23px);
+} 
+
+#button-attach:hover:active {
+  -moz-image-region: rect(252px 69px 273px 46px);
+} 
+
+#button-attach[disabled="true"] {
+  -moz-image-region: rect(252px 92px 273px 69px) !important;
+} 
+
+#spellingButton {
+  -moz-image-region: rect(378px 23px 399px 0px);
+}
+
+#spellingButton:hover {
+  -moz-image-region: rect(378px 46px 399px 23px);
+}
+
+#spellingButton:hover:active {
+  -moz-image-region: rect(378px 69px 399px 46px);
+}
+
+#spellingButton[disabled="true"] {
+  -moz-image-region: rect(378px 92px 399px 69px) !important;
+}
+
+#button-save {
+  -moz-image-region: rect(273px 23px 294px 0px);
+}
+
+#button-save:hover {
+  -moz-image-region: rect(273px 46px 294px 23px);
+} 
+
+#button-save:hover:active {
+  -moz-image-region: rect(273px 69px 294px 46px);
+} 
+
+#button-save[disabled="true"] {
+  -moz-image-region: rect(273px 92px 294px 69px) !important;
+} 
+
+/* ::::: special toolbar colors ::::: */
+
+#content-frame {
+  border-left: 1px solid ThreeDDarkShadow;
+  border-right: 1px solid ThreeDLightShadow;
+}
+
+#appcontent {
+  border-left: 1px solid ThreeDShadow;
+  border-right: 1px solid ThreeDHighlight;
+}
+
+#FindToolbar {
+  border-top: none;
+  border-left-width: 1px;
+  -moz-border-left-colors: ThreeDDarkShadow;
+  border-right: none;
+  border-bottom: 2px solid;
+  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
+}
+
+#sidebar-splitter {
+  border-left: none;
+  border-right: none;
+  min-width: 5px;
+}
+
+#attachmentbucket-sizer {
+  border-top: none;
+  border-bottom: none;
+}
+
+#compose-toolbar-sizer {
+  border-top-width: 1px;
+  border-left: none;
+  border-right: none;
+  -moz-border-top-colors: ThreeDHighlight;
+}
+
+#msgSubject {
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+
+#MsgHeadersToolbar {
+  min-height: 0px; /* this undoes the min-height in toolbar.css */
+}
+
+/* ::::: autocomplete icons ::::: */
+
+treechildren::-moz-tree-cell-text(default-match) {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  -moz-margin-start: 15px;
+  -moz-margin-end: -3px;
+  border: none;
+}
+
+treechildren::-moz-tree-image(local-abook) {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  -moz-margin-start: 4px;
+  -moz-margin-end: -1px;
+  list-style-image: url("chrome://messenger/skin/addressbook/icons/addrbook.gif");
+}
+
+treechildren::-moz-tree-image(remote-abook) {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  -moz-margin-start: 2px;
+  -moz-margin-end: -3px;
+  list-style-image: url("chrome://messenger/skin/addressbook/icons/remote-addrbook.gif");
+}
+
+treechildren::-moz-tree-image(remote-err) {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  -moz-margin-start: 2px;
+  -moz-margin-end: -3px;
+  list-style-image: url("chrome://messenger/skin/addressbook/icons/remote-addrbook-error.gif");
+}
+
+treechildren::-moz-tree-image(subscribed-news) {
+  -moz-margin-start: 2px;
+  -moz-margin-end: -3px;
+  list-style-image: url("chrome://messenger/skin/icons/folder-newsgroup.gif");
+}
+
+/* ::::: compact menulists ::::: */
+
+.menulist-compact {
+  -moz-binding: url("chrome://messenger/content/messengercompose/menulistCompactBindings.xml#menulist-compact");
+  -moz-appearance: none;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  margin: 0 -1px -1px 0;
+  border: 2px solid;
+  -moz-border-top-colors: ThreeDHighlight ThreeDLightShadow;
+  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
+  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
+  -moz-border-left-colors: ThreeDHighlight ThreeDLightShadow;
+  background-color: ThreeDFace;
+  color: ButtonText;
+  list-style-image: url("chrome://global/skin/arrow/arrow-dn.gif");
+}
+
+.menulist-compact[open="true"] {
+  -moz-border-top-colors: ThreeDDarkShadow ThreeDShadow;
+  -moz-border-right-colors: ThreeDDarkShadow ThreeDHighlight;
+  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDHighlight;
+  -moz-border-left-colors: ThreeDDarkShadow ThreeDShadow;
+}
+
+.menulist-compact[disabled="true"] {
+  list-style-image: url("chrome://global/skin/arrow/arrow-dn-dis.gif");
+}
+
+.menulist-compact > .menulist-label-box > .menulist-label {
+  margin: 0 3px !important;
+  text-align: end;
+}
+
+.menulist-compact > .menulist-label-box > .menulist-icon {
+  -moz-margin-start: 2px;
+}
+
+.menulist-compact > .menulist-label-box,
+.menulist-compact[open="true"]:focus > .menulist-label-box {
+  -moz-appearance: none;
+  border: 1px solid transparent;
+  background: transparent;
+  color: inherit;
+}
+
+.menulist-compact:-moz-focusring > .menulist-label-box {
+  border: 1px dotted;
+}
+
+/* ::::: lightweight themes ::::: */
+
+#MsgHeadersToolbar:-moz-lwtheme,
+#FormatToolbar:-moz-lwtheme,
+#compose-toolbar-sizer:-moz-lwtheme {
+  text-shadow: none;
+  color: -moz-dialogtext;
+  background-color: -moz-dialog;
+}
+
+#MsgHeadersToolbar textbox:-moz-lwtheme,
+#MsgHeadersToolbar menulist:-moz-lwtheme,
+.formatting-button > menulist:-moz-lwtheme {
+  opacity: 1;
+}

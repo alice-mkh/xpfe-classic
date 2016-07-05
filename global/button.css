@@ -1,0 +1,117 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== button.css =====================================================
+  == Styles used by the XUL button element.
+  ======================================================================= */
+
+@import url("chrome://platform/skin/global/button.css");
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* :::::::::: button :::::::::: */
+
+button {
+  -moz-appearance: button;
+  margin: 1px 5px 2px 5px;
+  min-width: 6.3em;
+  border: 3px solid;
+  -moz-border-top-colors: transparent ThreeDHighlight ThreeDLightShadow;
+  -moz-border-right-colors: transparent ThreeDDarkShadow ThreeDShadow;
+  -moz-border-bottom-colors: transparent ThreeDDarkShadow ThreeDShadow;
+  -moz-border-left-colors: transparent ThreeDHighlight ThreeDLightShadow;
+  background-color: ThreeDFace;
+  color: ButtonText;
+}
+
+.button-text {
+  margin: 0 !important;
+  text-align: center;
+}
+
+/* .......... focused state .......... */
+
+button:focus {
+  -moz-border-top-colors: ThreeDDarkShadow ThreeDHighlight transparent;
+  -moz-border-right-colors: ThreeDDarkShadow ThreeDDarkShadow ThreeDShadow;
+  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDDarkShadow ThreeDShadow;
+  -moz-border-left-colors: ThreeDDarkShadow ThreeDHighlight transparent;
+}
+
+/* .......... disabled state .......... */
+
+button[disabled="true"],
+button[disabled="true"]:hover:active {
+  -moz-border-top-colors: transparent ThreeDHighlight ThreeDLightShadow !important;
+  -moz-border-right-colors: transparent ThreeDDarkShadow ThreeDShadow !important;
+  -moz-border-bottom-colors: transparent ThreeDDarkShadow ThreeDShadow !important;
+  -moz-border-left-colors: transparent ThreeDHighlight ThreeDLightShadow !important;
+  color: GrayText;
+}
+
+/* ::::: menu/menu-button buttons ::::: */
+
+button[type="menu-button"] {
+  -moz-box-align: stretch;
+  -moz-box-pack: center;
+  -moz-appearance: none;
+  padding: 0;
+  border: none;
+}
+
+.button-menubutton-button {
+  margin: 0px;
+}
+
+.button-menu-dropmarker,
+.button-menubutton-dropmarker {
+  -moz-box-align: center;
+  padding: 1px;
+  list-style-image: url("chrome://global/skin/arrow/arrow-dn.gif");
+}
+
+.button-menu-dropmarker[disabled="true"],
+.button-menubutton-dropmarker[disabled="true"] {
+  list-style-image: url("chrome://global/skin/arrow/arrow-dn-dis.gif");
+}
+
+.button-menubutton-dropmarker {
+  -moz-appearance: none;
+  margin: 0px;
+  border: 1px solid transparent;
+  -moz-border-top-colors: ThreeDHighlight;
+  -moz-border-right-colors: ThreeDShadow;
+  -moz-border-bottom-colors: ThreeDShadow;
+  -moz-border-left-colors: ThreeDHighlight;
+}
+
+.button-menubutton-dropmarker[open="true"] {
+  padding: 2px 0px 0px 2px;
+  -moz-border-top-colors: ThreeDShadow;
+  -moz-border-right-colors: ThreeDHighlight;
+  -moz-border-bottom-colors: ThreeDHighlight;
+  -moz-border-left-colors: ThreeDShadow;
+}
+
+/* ::::: plain buttons ::::: */
+
+button.plain {
+  border: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+button[type="disclosure"] {
+  border: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  -moz-appearance: none;
+  list-style-image: url("chrome://global/skin/tree/twisty-clsd.gif");
+  min-width: 0px !important;
+  background-color: transparent;
+}
+
+button[type="disclosure"][open="true"] {
+  list-style-image: url("chrome://global/skin/tree/twisty-open.gif");
+}

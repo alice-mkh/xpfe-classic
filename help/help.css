@@ -1,0 +1,100 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://global/skin/");
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#HelpToolbar toolbarbutton {
+  -moz-box-orient: horizontal !important;
+  min-width: 0px;
+  margin: 0 !important;
+  padding: 4px 5px;
+}
+
+#help-back-button {
+  list-style-image: url("chrome://help/skin/btn1.gif");
+  -moz-image-region: rect(0px 19px 20px 0px);
+}
+
+#help-back-button:hover {
+  -moz-image-region: rect(0px 38px 20px 19px);
+}
+
+#help-back-button:hover:active {
+  -moz-image-region: rect(0px 57px 20px 38px);
+}
+
+#help-back-button[disabled="true"] {
+  -moz-image-region: rect(0px 76px 20px 57px) !important;
+}
+
+#help-forward-button {
+  list-style-image: url("chrome://help/skin/btn1.gif");
+  -moz-image-region: rect(20px 19px 40px 0px);
+}
+
+#help-forward-button:hover {
+  -moz-image-region: rect(20px 38px 40px 19px);
+}
+
+#help-forward-button:hover:active {
+  -moz-image-region: rect(20px 57px 40px 38px);
+}
+
+#help-forward-button[disabled="true"] {
+  -moz-image-region: rect(20px 76px 40px 57px) !important;
+}
+
+#help-home-button {
+  list-style-image: url("chrome://help/skin/btn2.gif");
+  -moz-image-region: rect(0px 23px 20px 0px);
+}
+
+#help-home-button:hover {
+  -moz-image-region: rect(0px 46px 20px 23px);
+}
+
+#help-home-button:hover:active {
+  -moz-image-region: rect(0px 69px 20px 46px);
+}
+
+#help-home-button[disabled="true"] {
+  -moz-image-region: rect(0px 92px 20px 69px) !important;
+}
+
+#help-print-button {
+  list-style-image: url("chrome://help/skin/btn3.gif");
+  -moz-image-region: rect(0px 23px 21px 0px);
+}
+
+#help-print-button:hover {
+  -moz-image-region: rect(0px 46px 21px 23px);
+}
+
+#help-print-button:hover:active {
+  -moz-image-region: rect(0px 69px 21px 46px);
+}
+
+#help-print-button[disabled="true"] {
+  -moz-image-region: rect(0px 92px 21px 69px) !important;
+}
+
+/* Hide labels for the toolbar because we really don't need them what with the
+   tooltips */
+#HelpToolbar .toolbarbutton-text {
+  display: none;
+}
+
+/* With no labels, we don't need the margin on the icon that separates it
+   from the label */
+#HelpToolbar .toolbarbutton-icon {
+  -moz-margin-end: 0;
+}
+
+/* Set the minimum sidebar width so the help contents aren't squeezed together.*/
+#help-sidebar { min-width: 15em; width: 20em; max-width: 25em; }
+
+#context-copy[disabled="true"] {
+  display: none;
+}

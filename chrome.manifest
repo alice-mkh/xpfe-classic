@@ -1,0 +1,37 @@
+# SeaMonkey styling. Mostly icon replacements
+
+skin	communicator		$NAME/1.0	communicator/
+skin	editor				$NAME/1.0	editor/
+skin	messenger			$NAME/1.0	messenger/
+skin	messenger-newsblog	$NAME/1.0	messenger-newsblog/
+skin	navigator			$NAME/1.0	navigator/
+
+
+# Toolkit styling. Heavy changes here to emulate XPFE look&feel
+
+skin	global				$NAME/1.0	global/
+skin	help				$NAME/1.0	help/
+skin	mozapps				$NAME/1.0	mozapps/
+
+skin	platform			$NAME/1.0	win/
+skin	platform			$NAME/1.0	unix/ os=Linux
+
+
+# Addon manager
+
+style chrome://mozapps/content/extensions/extensions.xul chrome://global/skin/inContentUI.css appversion<2.37
+style chrome://mozapps/content/extensions/extensions.xul chrome://mozapps/skin/extensions/extensions-new.css appversion>=2.37
+style about:addons chrome://global/skin/inContentUI.css appversion<2.37
+style about:addons chrome://mozapps/skin/extensions/extensions-new.css appversion>=2.37
+
+# about:privatebrowsing
+style chrome://communicator/content/aboutPrivateBrowsing.xul chrome://communicator/skin/aboutPrivateBrowsing-new.css appversion>=2.37
+style chrome://communicator/content/aboutPrivateBrowsing.xul chrome://communicator/skin/aboutPrivateBrowsing-old.css appversion<2.37
+style about:privatebrowsing chrome://communicator/skin/aboutPrivateBrowsing-new.css appversion>=2.37
+style about:privatebrowsing chrome://communicator/skin/aboutPrivateBrowsing-old.css appversion<2.37
+
+style	chrome://global/content/customizeToolbar.xul		chrome://messenger/skin/addressbook/addressbook.css
+style	chrome://global/content/customizeToolbar.xul		chrome://messenger/skin/messengercompose/messengercompose.css
+style	chrome://global/content/customizeToolbar.xul		chrome://messenger/skin/primaryToolbar.css
+style	chrome://global/content/customizeToolbar.xul		chrome://messenger/skin/smime/msgCompSMIMEOverlay.css
+style	chrome://global/content/customizeToolbar.xul		chrome://navigator/skin/navigator.css

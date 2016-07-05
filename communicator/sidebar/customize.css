@@ -1,0 +1,26 @@
+/* -*- Mode: C; c-basic-offset: 2 -*- */
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.treecell-panel
+{
+ list-style-image: url("chrome://communicator/skin/bookmarks/bookmark-item.gif");
+}
+
+.treecell-panel[haslink="true"],
+treeitem[container="true"] > treerow > .treecell-panel
+{
+ list-style-image: url("chrome://communicator/skin/bookmarks/bookmark-folder-closed.gif");
+}
+
+treeitem[container="true"][open="true"] > treerow > .treecell-panel
+{
+ list-style-image: url("chrome://communicator/skin/bookmarks/bookmark-folder-open.gif");
+}
+
+box#reorder {
+  -moz-box-pack: center;
+}

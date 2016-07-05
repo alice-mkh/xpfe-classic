@@ -1,0 +1,34 @@
+#!/bin/bash
+
+rm -rf temp
+mkdir temp
+cp install.rdf temp
+cp chrome.manifest temp
+
+cp communicator temp -r
+cp editor temp -r
+cp global temp -r
+cp help temp -r
+cp messenger temp -r
+cp mozapps temp -r
+cp navigator temp -r
+cp unix temp -r
+cp win temp -r
+
+cp icon.png temp
+cp preview.png temp
+
+cd temp
+
+#Substitute variables
+while read LINE; do
+    if [[ $LINE != [A-Z]* ]]; then
+        continue
+    fi
+    LINE1=`echo $LINE | grep -oE "^[^=]+"`
+    LINE2=`echo $LINE | grep -oE "[^=]+$"`
+    sed "s|\$$LINE1|$LINE2|g" -i `find . -name "*.rdf"` `find . -name "*.xul"` `find . -name "*.js"` `find . -name "*.css"` `find . -name "*.manifest"`
+    eval "$LINE1=\"$LINE2\""
+done < "../config.txt"
+
+zip ../$NAME-$VERSION-sm.xpi * -rq

@@ -1,0 +1,41 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.button-box {
+  padding: 1px 4px 2px 3px;
+} 
+
+button[default="true"] {
+  -moz-border-top-colors: ThreeDDarkShadow ThreeDHighlight ThreeDLightShadow;
+  -moz-border-right-colors: ThreeDDarkShadow ThreeDDarkShadow ThreeDShadow;
+  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDDarkShadow ThreeDShadow;
+  -moz-border-left-colors: ThreeDDarkShadow ThreeDHighlight ThreeDLightShadow;
+}
+
+button:hover {
+  color: -moz-buttonhovertext;
+  background-color: -moz-buttonhoverface;
+}
+
+button:hover:active,
+button[open="true"],
+button[checked="true"] {
+  -moz-border-top-colors: ThreeDDarkShadow ThreeDShadow transparent;
+  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow transparent;
+  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow transparent;
+  -moz-border-left-colors: ThreeDDarkShadow ThreeDShadow transparent;
+  color: ButtonText;
+}
+
+button:hover:active > .button-box,
+button[open="true"] > .button-box,
+button[checked="true"] > .button-box {
+  padding: 2px 3px 1px 4px;
+}
+
+button[disabled="true"] > .button-box {
+  padding: 1px 4px 2px 3px !important;
+}

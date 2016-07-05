@@ -1,0 +1,46 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+.searchbar-textbox {
+  width: 6em;
+  min-width: 6em;
+}
+
+/* ::::: searchbar-engine-button ::::: */
+
+.toolbarbutton-icon {
+  margin: 3px;
+  height: 16px;
+  width: 16px;
+  list-style-image: url("chrome://communicator/skin/directory/file.gif");
+}
+
+.toolbarbutton-menu-dropmarker {
+  -moz-appearance: none !important;
+  list-style-image: url("chrome://global/skin/arrow/arrow-dn.gif");
+}
+
+.searchbar-engine-button[open="true"] > .toolbarbutton-menu-dropmarker {
+  list-style-image: url("chrome://global/skin/arrow/arrow-dn-hov.gif");
+}
+
+
+/* ::::: search-go-button ::::: */
+
+.search-go-container {
+  -moz-box-align: center;
+}
+
+.search-go-button {
+  list-style-image: url("chrome://global/skin/icons/search-glass.gif");
+  padding: 3px;
+}
+
+.search-go-button:-moz-locale-dir(rtl) {
+  transform: scaleX(-1);
+}
+
+.searchbar-engine-menuitem[selected="true"] > .menu-iconic-text {
+  font-weight: bold;
+}

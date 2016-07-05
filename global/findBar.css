@@ -1,0 +1,88 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+findbar {
+  border-top: 1px solid ThreeDHighlight;
+  border-bottom: 1px solid ThreeDShadow;
+  border-left: 2px solid;
+  -moz-border-left-colors: ThreeDShadow ThreeDHighlight;
+  border-right: 1px solid ThreeDShadow;
+  min-width: 1px;
+}
+
+findbar:-moz-lwtheme {
+  background: -moz-Dialog;
+  color: -moz-DialogText;
+  text-shadow: none;
+}
+
+.findbar-container {
+  -moz-padding-start: 4px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+/* Search field */
+
+.findbar-textbox {
+  margin: 0;
+}
+
+.findbar-textbox[status="notfound"] {
+  color: red;
+}
+
+/* Buttons */
+
+.findbar-find-previous,
+.findbar-find-next {
+  -moz-appearance: button;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.findbar-find-previous {
+  list-style-image: url("chrome://global/skin/arrow/arrow-up.gif");
+}
+
+.findbar-find-previous[disabled="true"] {
+  list-style-image: url("chrome://global/skin/arrow/arrow-up-dis.gif");
+}
+
+.findbar-find-next {
+  list-style-image: url("chrome://global/skin/arrow/arrow-dn.gif");
+}
+
+.findbar-find-next[disabled="true"] {
+  list-style-image: url("chrome://global/skin/arrow/arrow-dn-dis.gif");
+}
+
+.findbar-find-previous > .toolbarbutton-icon,
+.findbar-find-next > .toolbarbutton-icon {
+  margin: -2px 0;
+  padding: 0;
+}
+
+.findbar-highlight,
+.findbar-case-sensitive {
+  -moz-margin-start: 5px;
+}
+
+.findbar-highlight > .toolbarbutton-icon,
+.findbar-case-sensitive > .toolbarbutton-icon {
+  display: none;
+}
+
+.findbar-find-status,
+.found-matches {
+  color: GrayText;
+  margin: 0 !important;
+  -moz-margin-start: 12px !important;
+}
+
+.find-status-icon[status="pending"] {
+  list-style-image: url("chrome://global/skin/icons/loading.gif");
+}
