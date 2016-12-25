@@ -22,9 +22,9 @@ skin	platform			$NAME/1.0	unix/ os=Linux
 style chrome://mozapps/content/extensions/extensions.xul chrome://global/skin/inContentUI.css appversion<2.37
 style chrome://mozapps/content/extensions/extensions.xul chrome://mozapps/skin/extensions/extensions-new.css appversion>=2.37
 style chrome://mozapps/content/extensions/extensions.xul chrome://mozapps/skin/extensions/extensions-new2.css appversion>=2.46
-style about:addons                                       chrome://mozapps/skin/extensions/extensions-new2.css appversion>=2.46
 style about:addons chrome://global/skin/inContentUI.css appversion<2.37
 style about:addons chrome://mozapps/skin/extensions/extensions-new.css appversion>=2.37
+style about:addons chrome://mozapps/skin/extensions/extensions-new2.css appversion>=2.46
 
 # about:privatebrowsing
 style chrome://communicator/content/aboutPrivateBrowsing.xul chrome://communicator/skin/aboutPrivateBrowsing-new.css appversion>=2.37
