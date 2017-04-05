@@ -1,20 +1,20 @@
 # SeaMonkey styling. Mostly icon replacements
 
-skin	communicator		$NAME/1.0	communicator/
-skin	editor				$NAME/1.0	editor/
-skin	messenger			$NAME/1.0	messenger/
-skin	messenger-newsblog	$NAME/1.0	messenger-newsblog/
-skin	navigator			$NAME/1.0	navigator/
+skin	communicator		xpfeclassic/1.0	communicator/
+skin	editor				xpfeclassic/1.0	editor/
+skin	messenger			xpfeclassic/1.0	messenger/
+skin	messenger-newsblog	xpfeclassic/1.0	messenger-newsblog/
+skin	navigator			xpfeclassic/1.0	navigator/
 
 
 # Toolkit styling. Heavy changes here to emulate XPFE look&feel
 
-skin	global				$NAME/1.0	global/
-skin	help				$NAME/1.0	help/
-skin	mozapps				$NAME/1.0	mozapps/
+skin	global				xpfeclassic/1.0	global/
+skin	help				xpfeclassic/1.0	help/
+skin	mozapps				xpfeclassic/1.0	mozapps/
 
-skin	platform			$NAME/1.0	win/
-skin	platform			$NAME/1.0	unix/	os=Linux
+skin	platform			xpfeclassic/1.0	win/
+skin	platform			xpfeclassic/1.0	unix/	os=Linux
 
 
 # Addon manager
