@@ -8,7 +8,6 @@ cp chrome.manifest temp
 cp communicator temp -r
 cp editor temp -r
 cp global temp -r
-cp help temp -r
 cp messenger temp -r
 cp mozapps temp -r
 cp navigator temp -r
