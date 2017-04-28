@@ -7,6 +7,7 @@ skin	messenger-newsblog	xpfeclassic/1.0	messenger-newsblog/
 skin	navigator			xpfeclassic/1.0	navigator/
 
 
+
 # Toolkit styling. Heavy changes here to emulate XPFE look&feel
 
 skin	global				xpfeclassic/1.0	global/
@@ -14,6 +15,10 @@ skin	mozapps				xpfeclassic/1.0	mozapps/
 
 skin	platform			xpfeclassic/1.0	win/
 skin	platform			xpfeclassic/1.0	unix/	os=Linux
+
+
+# Help manager
+skin	help				xpfeclassic/1.0	help/	appversion<2.47
 
 
 # Addon manager

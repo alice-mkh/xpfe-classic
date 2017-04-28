@@ -5,5 +5,5 @@ EXT_DESC=Emulates classic Mozilla appearance
 VERSION=0.1.2
 
 SM_ID={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
-SM_MIN_VERSION=2.47
+SM_MIN_VERSION=2.1
 SM_MAX_VERSION=2.52
