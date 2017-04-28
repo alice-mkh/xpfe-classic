@@ -31,7 +31,7 @@ hr {
 
 a[href^="http://"]:after,
 a[href^="https://"]:after {
-  content: url('chrome://help/skin/Weblink.png');
+  content: url('chrome://communicator/skin/helpviewer/Weblink.png');
 }
 
 :link {

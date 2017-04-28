@@ -13,7 +13,7 @@
 }
 
 #help-back-button {
-  list-style-image: url("chrome://help/skin/btn1.gif");
+  list-style-image: url("chrome://communicator/skin/helpviewer/btn1.gif");
   -moz-image-region: rect(0px 19px 20px 0px);
 }
 
@@ -30,7 +30,7 @@
 }
 
 #help-forward-button {
-  list-style-image: url("chrome://help/skin/btn1.gif");
+  list-style-image: url("chrome://communicator/skin/helpviewer/btn1.gif");
   -moz-image-region: rect(20px 19px 40px 0px);
 }
 
@@ -47,7 +47,7 @@
 }
 
 #help-home-button {
-  list-style-image: url("chrome://help/skin/btn2.gif");
+  list-style-image: url("chrome://communicator/skin/helpviewer/btn2.gif");
   -moz-image-region: rect(0px 23px 20px 0px);
 }
 
@@ -64,7 +64,7 @@
 }
 
 #help-print-button {
-  list-style-image: url("chrome://help/skin/btn3.gif");
+  list-style-image: url("chrome://communicator/skin/helpviewer/btn3.gif");
   -moz-image-region: rect(0px 23px 21px 0px);
 }
 
