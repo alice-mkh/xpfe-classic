@@ -2,7 +2,7 @@ EXT_ID={c8023348-386a-4bf7-b886-44e144c13910}
 EXT_NAME=XPFE-Classic
 EXT_DESC=Emulates classic Mozilla appearance
 
-VERSION=0.1.3
+VERSION=0.1.4
 
 SM_ID={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
 SM_MIN_VERSION=2.1
