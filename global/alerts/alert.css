@@ -25,7 +25,7 @@
 
 .alertTextBox {
   padding: 8px;
-  -moz-padding-start: 16px;
+  padding-inline-start: 16px;
   width: 255px;
 }
 

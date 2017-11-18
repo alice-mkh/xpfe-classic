@@ -3,7 +3,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #warningBox {
-  -moz-padding-start: 54px;
+  padding-inline-start: 54px;
 }
 
 #tabList {
@@ -48,9 +48,9 @@ treechildren::-moz-tree-row(alternate, selected) {
 }
 
 #buttons {
-  -moz-margin-start: 80px;
+  margin-inline-start: 80px;
 }
 #buttons > button {
   margin-top: 2em;
-  -moz-margin-start: 5px;
+  margin-inline-start: 5px;
 }

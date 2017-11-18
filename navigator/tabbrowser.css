@@ -159,7 +159,7 @@ tabpanels {
 .tab-drop-indicator-bar {
     height: 11px;
     margin-top: -11px;
-    -moz-margin-start: -6px;
+    margin-inline-start: -6px;
     position: relative;
 }
 

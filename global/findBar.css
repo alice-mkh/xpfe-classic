@@ -20,7 +20,7 @@ findbar:-moz-lwtheme {
 }
 
 .findbar-container {
-  -moz-padding-start: 4px;
+  padding-inline-start: 4px;
   padding-top: 1px;
   padding-bottom: 1px;
 }
@@ -68,7 +68,7 @@ findbar:-moz-lwtheme {
 
 .findbar-highlight,
 .findbar-case-sensitive {
-  -moz-margin-start: 5px;
+  margin-inline-start: 5px;
 }
 
 .findbar-highlight > .toolbarbutton-icon,
@@ -80,7 +80,7 @@ findbar:-moz-lwtheme {
 .found-matches {
   color: GrayText;
   margin: 0 !important;
-  -moz-margin-start: 12px !important;
+  margin-inline-start: 12px !important;
 }
 
 .find-status-icon[status="pending"] {

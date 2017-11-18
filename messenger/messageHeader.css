@@ -47,8 +47,8 @@
 .headerName {
   margin-top: 0px;
   margin-bottom: 5px;
-  -moz-margin-start: 0px;
-  -moz-margin-end: .5em;
+  margin-inline-start: 0px;
+  margin-inline-end: .5em;
   font-weight: bold;
   text-align: right;
 }
@@ -73,7 +73,7 @@
 
 .tagvalue {
   margin-top: 0;
-  -moz-margin-start: 0;
+  margin-inline-start: 0;
 }
 
 /* Fix collapsed header styles */
@@ -95,7 +95,7 @@
 }
 
 .messageIdDisplayImage {
-  -moz-padding-start: 2px;
+  padding-inline-start: 2px;
   -moz-box-pack: end;
 }
 
@@ -113,7 +113,7 @@
 }
 
 .emailDisplayImage {
-  -moz-padding-start: 2px;
+  padding-inline-start: 2px;
   -moz-box-pack: end;
 }
 
@@ -174,8 +174,8 @@ mail-emailaddress:-moz-focusring {
 .collapsedHeaderDisplayName {
   margin-top: 0px;
   margin-bottom: 0px;
-  -moz-margin-start: .55em;
-  -moz-margin-end: .5em;
+  margin-inline-start: .55em;
+  margin-inline-end: .5em;
   min-height: 16px;
   font-weight: bold;
 }
@@ -186,5 +186,5 @@ mail-emailaddress:-moz-focusring {
 
 .collapsedAttachmentButton {
   list-style-image: url("chrome://messenger/skin/icons/message-mail-attach.gif");
-  -moz-margin-end: .5em;
+  margin-inline-end: .5em;
 }

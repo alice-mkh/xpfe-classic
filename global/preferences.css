@@ -28,7 +28,7 @@ radio[pane] {
 .paneSelector {
   border-bottom: 2px groove ThreeDFace;
   margin: 0px;
-  -moz-padding-start: 10px;
+  padding-inline-start: 10px;
   background-color: -moz-Field;
   color: -moz-FieldText;
 }

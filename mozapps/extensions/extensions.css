@@ -117,7 +117,7 @@
 #categories {
   -moz-appearance: none;
   border: none;
-  -moz-margin-end: -1px;
+  margin-inline-end: -1px;
   background-color: transparent;
   position: relative;
   margin-top: 41px;
@@ -195,7 +195,7 @@
 .category-icon {
   width: 32px;
   height: 32px;
-  -moz-margin-start: 6px;
+  margin-inline-start: 6px;
 }
 
 #category-search > .category-icon {
@@ -270,7 +270,7 @@
 
 #header-utils-btn {
   list-style-image: url("chrome://mozapps/skin/extensions/utilities.png");
-  -moz-margin-end: 16px;
+  margin-inline-end: 16px;
 }
 
 #header-utils-btn:-moz-focusring > .button-box {
@@ -324,7 +324,7 @@
 
 .discover-logo {
   list-style-image: url("chrome://mozapps/skin/extensions/discover-logo.png");
-  -moz-margin-end: 15px;
+  margin-inline-end: 15px;
 }
 
 .discover-title {
@@ -366,7 +366,7 @@
 .details {
   cursor: pointer;
   margin: 0;
-  -moz-margin-start: 10px;
+  margin-inline-start: 10px;
 }
 
 .icon-container {
@@ -424,7 +424,7 @@
 }
 
 .description-container {
-  -moz-margin-start: 6px;
+  margin-inline-start: 6px;
   -moz-box-align: center;
 }
 
@@ -435,7 +435,7 @@
 .warning,
 .pending,
 .error {
-  -moz-margin-start: 48px;
+  margin-inline-start: 48px;
   -moz-box-align: center;
 }
 
@@ -555,7 +555,7 @@
 
 .addon .relnotes-toggle > .button-box > .button-icon {
   display: -moz-box;
-  -moz-padding-start: 4px;
+  padding-inline-start: 4px;
 }
 
 .addon[show-relnotes] .relnotes-toggle {
@@ -612,12 +612,12 @@
 #detail-notifications .warning,
 #detail-notifications .pending,
 #detail-notifications .error {
-  -moz-margin-start: 0;
+  margin-inline-start: 0;
 }
 
 #detail-icon-container {
   width: 64px;
-  -moz-margin-end: 10px;
+  margin-inline-end: 10px;
 }
 
 #detail-icon {
@@ -634,7 +634,7 @@
 }
 
 #detail-screenshot {
-  -moz-margin-end: 2em;
+  margin-inline-end: 2em;
   max-width: 300px;
   max-height: 300px;
 }
@@ -657,7 +657,7 @@
 }
 
 #detail-desc, #detail-fulldesc {
-  -moz-margin-start: 6px;
+  margin-inline-start: 6px;
   /* This is necessary to fix layout issues with multi-line descriptions, see
      bug 592712*/
   outline: solid transparent;
@@ -735,7 +735,7 @@ setting {
   font-size: 90.9%;
   color: graytext;
   margin-top: -2px;
-  -moz-margin-start: 2em;
+  margin-inline-start: 2em;
   white-space: pre-wrap;
 }
 
@@ -760,8 +760,8 @@ setting[type="radio"] > radiogroup {
 /*** creator ***/
 
 .creator > label {
-  -moz-margin-start: 0;
-  -moz-margin-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 
 .creator > .text-link {
@@ -773,7 +773,7 @@ setting[type="radio"] > radiogroup {
 /*** rating ***/
 
 .meta-rating {
-  -moz-margin-end: 0;
+  margin-inline-end: 0;
   vertical-align: text-top;
 }
 
@@ -815,7 +815,7 @@ setting[type="radio"] > radiogroup {
   -moz-appearance: none;
   background-color: ButtonFace;
   padding-bottom: 1px;
-  -moz-padding-start: 2px;
+  padding-inline-start: 2px;
   border-width: 1px;
   border-style: solid;
   border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight;

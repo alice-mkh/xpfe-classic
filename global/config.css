@@ -22,7 +22,7 @@
   border: 1px solid ThreeDShadow;
   border-radius: 10px;
   padding: 3em;
-  -moz-padding-start: 78px;
+  padding-inline-start: 78px;
   margin-left: 1em;
   margin-right: 1em;
 }
@@ -58,7 +58,7 @@
 #exclam
 {
   list-style-image: url("chrome://global/skin/icons/alert-exclam.gif");
-  -moz-margin-end: 3em;
+  margin-inline-end: 3em;
 }
 
 #configTreeBody::-moz-tree-cell-text(user)

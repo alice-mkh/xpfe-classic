@@ -175,7 +175,7 @@ treechildren::-moz-tree-drop-feedback {
   background-color: Highlight;
   width: 50px;
   height: 2px;
-  -moz-margin-start: 5px;
+  margin-inline-start: 5px;
 }
 
 /* ::::: tree checkbox ::::: */
@@ -301,7 +301,7 @@ treecol:not([hideheader="true"]) > .treecol-sortdirection[sortDirection="descend
 /* ::::: twisty :::::  */
 
 treechildren::-moz-tree-twisty {
-  -moz-padding-end: 3px;
+  padding-inline-end: 3px;
   width: 9px; /* The image's width is 9 pixels */
   list-style-image: url("chrome://global/skin/tree/twisty-clsd.gif");
 }
@@ -345,6 +345,6 @@ treechildren::-moz-tree-cell-text(selected, editing) {
   -moz-border-left-colors: Highlight;
   -moz-border-right-colors: Highlight;
   margin: 0;
-  -moz-margin-start: -4px;
+  margin-inline-start: -4px;
   padding: 1px;
 }
